@@ -14,7 +14,7 @@ class QuickSortProgram
     {
       if (!int.TryParse(inputValues[inputIndex], out numbers[inputIndex]))
       {
-        Console.WriteLine($"Ошибка: '{inputValues[inputIndex]}' не является числом.");
+        Console.WriteLine($"Ошибка: '{inputValues[inputIndex]}' не является числом");
         numbers[inputIndex] = 0;
       }
     }
