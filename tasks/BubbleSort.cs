@@ -18,7 +18,7 @@ class BubbleSortProgram
       }
       else
       {
-        Console.WriteLine($"Ошибка: '{inputNumbers[inputIndex]}' не является числом.");
+        Console.WriteLine($"Ошибка: '{inputNumbers[inputIndex]}' не является числом");
         numbersToSort[inputIndex] = 0;
       }
     }
