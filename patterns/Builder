@@ -1,0 +1,24 @@
+public class Car
+{
+  public string Make { get; private set; }
+  public string Model { get; private set; }
+
+  public class Builder
+  {
+    private readonly Car _car = new Car();
+
+    public Builder SetMake(string make)
+    {
+      _car.Make = make;
+      return this;
+    }
+
+    public Builder SetModel(string model)
+    {
+      _car.Model = model;
+      return this;
+    }
+
+    public Car Build() => _car;
+  }
+}
